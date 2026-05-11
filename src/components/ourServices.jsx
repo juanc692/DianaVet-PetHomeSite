@@ -3,41 +3,59 @@ import Vet from '../assets/veterinaria.png'
 import Bath from '../assets/baño.png'
 import Vacc from '../assets/vacunacion.png'
 
-export default function ourServices() {
+export default function OurServices() {
   return (
-    <>
-    <div className='row text-center p-3' style={{backgroundColor:'#8fd37c33'}}>
-        <h2>Nuestros servicios</h2>
-        <div className='d-flex justify-content-center'>
-            <div className='mb-3 p-3' style={{ minHeight: '200px',maxWidth:'300px'}}>
-                <img
+    <section className='container-fluid py-5' style={{ backgroundColor: '#8fd37c33' }}>
+      <div className='container'>
+        <h2 className='text-center mb-5'>Nuestros servicios</h2>
+        
+        {/* Usamos 'row' de Bootstrap para manejar el responsive de forma nativa */}
+        <div className='row justify-content-center g-4'>
+          
+          {/* Servicio 1: Veterinaria */}
+          <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
+            <div style={{ maxWidth: '300px' }}>
+              <img
                 src={Vet}
-                alt="Carta servicios"
-                style={{minHeight:'150px'},{width:'100%'}}
-                />
-                <h5>Veterinaria</h5>
-                <p>Cuidamos a tu mascota como familia. servicios completos y un trato cercano que garantiza su bienestar en todo momento.</p>
+                alt="Servicio de Veterinaria"
+                className="img-fluid mb-3"
+                style={{ height: '150px', objectFit: 'contain' }}
+              />
+              <h5>Veterinaria</h5>
+              <p>Cuidamos a tu mascota como familia. Servicios completos y un trato cercano que garantiza su bienestar en todo momento.</p>
             </div>
-            <div className='mb-3 p-3' style={{ minHeight: '200px',maxWidth:'300px'}}>
-                <img
+          </div>
+
+          {/* Servicio 2: Baño */}
+          <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
+            <div style={{ maxWidth: '300px' }}>
+              <img
                 src={Bath}
-                alt="Carta servicios"
-                style={{minHeight:'150px'},{width:'100%'}}
-                />
-                <h5>Baño y secado</h5>
-                <p>Deja a tu mascota limpia, fresca y feliz con nuestro servicio de baño y secado, realizado con productos de calidad y cuidado profesional.</p>
+                alt="Servicio de Baño"
+                className="img-fluid mb-3"
+                style={{ height: '150px', objectFit: 'contain' }}
+              />
+              <h5>Baño y secado</h5>
+              <p>Deja a tu mascota limpia, fresca y feliz con nuestro servicio de baño y secado, realizado con productos de calidad y cuidado profesional.</p>
             </div>
-            <div className='mb-3 p-3' style={{ minHeight: '200px',maxWidth:'300px'}}>
-                <img
+          </div>
+
+          {/* Servicio 3: Vacunación */}
+          <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
+            <div style={{ maxWidth: '300px' }}>
+              <img
                 src={Vacc}
-                alt="Carta servicios"
-                style={{minHeight:'150px'},{width:'100%'}}
-                />
-                <h5>Vacunacion</h5>
-                <p>Protege la salud de tu mascota con nuestro servicio de vacunación, seguro, oportuno y realizado por profesionales comprometidos con su bienestar.</p>
+                alt="Servicio de Vacunación"
+                className="img-fluid mb-3"
+                style={{ height: '150px', objectFit: 'contain' }}
+              />
+              <h5>Vacunación</h5>
+              <p>Protege la salud de tu mascota con nuestro servicio de vacunación, seguro, oportuno y realizado por profesionales comprometidos con su bienestar.</p>
             </div>
+          </div>
+
         </div>
-    </div>
-    </>
+      </div>
+    </section>
   )
 }
