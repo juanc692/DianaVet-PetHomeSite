@@ -1,0 +1,22 @@
+.btn-vet{
+    background-color: #EBC95E; /* El tono amarillo de la imagen */
+    color: #000000;            /* Texto negro */
+    border: none;
+    border-radius: 20px;       /* Bordes muy redondeados */
+    padding: 10px 30px;        /* Espaciado interno */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive; /* Fuente redondeada */
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-vet:hover{
+    background-color: #d4b553; /* Un tono un poco más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de levante */
+    color: #000000;
+}
+
+.btn-vet:active{
+    transform: translateY(0);
+}
