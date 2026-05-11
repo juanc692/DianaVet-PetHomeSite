@@ -11,7 +11,6 @@ export default function OurServices() {
         
         <div className='row justify-content-center g-4'>
           
-          {/* Servicio 1: Veterinaria */}
           <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
             <div style={{ maxWidth: '300px' }}>
               <img
@@ -25,7 +24,6 @@ export default function OurServices() {
             </div>
           </div>
 
-          {/* Servicio 2: Baño */}
           <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
             <div style={{ maxWidth: '300px' }}>
               <img
@@ -38,8 +36,7 @@ export default function OurServices() {
               <p>Deja a tu mascota limpia, fresca y feliz con nuestro servicio de baño y secado, realizado con productos de calidad y cuidado profesional.</p>
             </div>
           </div>
-
-          {/* Servicio 3: Vacunación */}
+          
           <div className='col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center text-center'>
             <div style={{ maxWidth: '300px' }}>
               <img
