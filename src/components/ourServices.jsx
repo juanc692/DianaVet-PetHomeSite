@@ -9,7 +9,6 @@ export default function OurServices() {
       <div className='container'>
         <h2 className='text-center mb-5'>Nuestros servicios</h2>
         
-        {/* Usamos 'row' de Bootstrap para manejar el responsive de forma nativa */}
         <div className='row justify-content-center g-4'>
           
           {/* Servicio 1: Veterinaria */}
