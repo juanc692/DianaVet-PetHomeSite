@@ -97,6 +97,7 @@ export default function Carousel({ children }) {
                     <img src={rightBtn} alt="RightButton" className='img-fluid btn'/>
                 </button>
             )} */}
+            
             <button
                 onClick={prev}
                 className="border-0 bg-transparent p-0 shadow-none"

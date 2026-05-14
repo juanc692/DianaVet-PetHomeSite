@@ -12,7 +12,7 @@ export default function Productos() {
         const Product = ({ src, name, price }) => {
             return (
                 <div
-                    className='mb-3 p-3 rounded w-100'
+                    className='mb-3 p-3 rounded d-flex flex-column h-100'
                     style={{
                         backgroundColor: '#D4EEFF',
                         maxWidth: '250px'
@@ -21,18 +21,19 @@ export default function Productos() {
                     <img
                         src={src}
                         alt="Producto"
-                        className="img-fluid"
+                        className="img-fluid w-100"
                         style={{
-                            minHeight: '150px',
-                            objectFit: 'cover'
+                            height: '200px',
+                            objectFit: 'cover',
+                            borderRadius: '8px'
                         }}
                     />
 
-                    <h5>{name}</h5>
+                    <h5 className='mt-3'>{name}</h5>
 
                     <p>${price}</p>
 
-                    <button className='btn btn-vet'>
+                    <button className='btn btn-vet mt-auto'>
                         Pedir
                     </button>
                 </div>
