@@ -12,7 +12,7 @@ export default function Comment({
     return (
 
         <div
-            className="p-3 rounded shadow-sm bg-white"
+            className="p-3 rounded shadow-sm bg-white m-2"
             style={{
                 width: "100%",
                 maxWidth: "400px",
