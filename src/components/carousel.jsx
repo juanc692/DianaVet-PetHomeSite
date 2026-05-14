@@ -37,12 +37,23 @@ export default function Carousel({ children }) {
 
     const maxIndex = slides.length - visibleItems;
 
+    // const prev = () => {
+    //     setCurr(curr => curr <= 0 ? 0 : curr - 1);
+    // };
+
+    // const next = () => {
+    //     setCurr(curr => curr >= maxIndex ? maxIndex : curr + 1);
+    // };
     const prev = () => {
-        setCurr(curr => curr <= 0 ? 0 : curr - 1);
+        setCurr(curr =>
+            curr === 0 ? maxIndex : curr - 1
+        );
     };
 
     const next = () => {
-        setCurr(curr => curr >= maxIndex ? maxIndex : curr + 1);
+        setCurr(curr =>
+            curr === maxIndex ? 0 : curr + 1
+        );
     };
 
     return (
@@ -69,7 +80,7 @@ export default function Carousel({ children }) {
                 ))}
             </div>
 
-            {curr > 0 && (
+            {/* {curr > 0 && (
                 <button
                     onClick={prev}
                     className="border-0 bg-transparent p-0 shadow-none"
@@ -85,7 +96,19 @@ export default function Carousel({ children }) {
                 >
                     <img src={rightBtn} alt="RightButton" className='img-fluid btn'/>
                 </button>
-            )}
+            )} */}
+            <button
+                onClick={prev}
+                className="border-0 bg-transparent p-0 shadow-none"
+            >
+                <img src={leftBtn} alt="RightButton" className='img-fluid btn'/>
+            </button>
+            <button
+                onClick={next}
+                className="border-0 bg-transparent p-0 shadow-none"
+            >
+                <img src={rightBtn} alt="RightButton" className='img-fluid btn'/>
+            </button>
 
         </div>
     );

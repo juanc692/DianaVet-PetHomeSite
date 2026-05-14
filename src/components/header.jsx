@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <nav id='HEADER_NAV' className="navbar navbar-expand-lg navbar-light p-3" style={{ backgroundColor: '#F3F3F3' }}>
+    <nav id='HEADER_NAV' className="navbar navbar-expand-lg navbar-light p-3" style={{ backgroundColor: '#C5FDC5' }}>
       <div className="container-fluid">
         
         <a className="navbar-brand d-flex align-items-center" href="/">
