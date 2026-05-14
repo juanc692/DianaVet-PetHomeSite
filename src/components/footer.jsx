@@ -3,7 +3,7 @@ import React from 'react'
 export default function footer() {
   return (
     <>
-    <footer className="py-5 mt-5" style={{ backgroundColor: '#F3F3F3' }}>
+    <footer id='FOOTER' className="py-5 mt-5" style={{ backgroundColor: '#F3F3F3' }}>
       <div className="container">
         <div className="row">
           {/* Columna 1: Logo e Info */}
@@ -18,9 +18,9 @@ export default function footer() {
           <div className="col-6 col-md-4 mb-4 mb-md-0">
             <h6 className="text-uppercase fw-bold">Navegación</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-decoration-none text-muted">Inicio</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Servicios</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Productos</a></li>
+              <li><a href="#HEADER_NAV" className="text-decoration-none text-muted">Inicio</a></li>
+              <li><a href="#SERVICES" className="text-decoration-none text-muted">Servicios</a></li>
+              <li><a href="#PRODUCTS" className="text-decoration-none text-muted">Productos</a></li>
             </ul>
           </div>
 

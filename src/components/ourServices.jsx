@@ -5,7 +5,7 @@ import Vacc from '../assets/vacunacion.png'
 
 export default function OurServices() {
   return (
-    <section className='container-fluid py-5' style={{ backgroundColor: '#8fd37c33' }}>
+    <section id='SERVICES' className='container-fluid py-5' style={{ backgroundColor: '#8fd37c33' }}>
       <div className='container'>
         <h2 className='text-center mb-5'>Nuestros servicios</h2>
         
