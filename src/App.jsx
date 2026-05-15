@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import reactLogo from './assets/react.svg'
@@ -6,10 +7,10 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Header from      './components/header'
-import SubHeader from   './components/subHeader'
-import OurServices from './components/ourServices'
-import Comentary from './components/comentary'
-import Productos from './components/productos'
+// import SubHeader from   './components/subHeader'
+// import OurServices from './components/ourServices'
+// import Comentary from './components/comentary'
+// import Productos from './components/productos'
 import Footer from './components/footer'
 import Whatsapp from './components/whatsapp';
 
@@ -20,14 +21,7 @@ function App() {
     <> 
     {/* Los componentes SIEMPRE deben empezar con letra mayuscula – Juan */}
     <Header></Header>
-    <SubHeader></SubHeader>
-    <hr class="my-4"></hr>
-    <OurServices></OurServices>
-    <hr class="my-4"></hr>
-    <Comentary></Comentary>
-    <hr class="my-4"></hr>
-    <Productos></Productos>
-    <hr class="my-4"></hr>
+    <Outlet></Outlet>
     <Footer></Footer>
     <Whatsapp/>
     </>
@@ -35,3 +29,12 @@ function App() {
 }
 
 export default App
+
+    // <SubHeader></SubHeader>
+    // <hr class="my-4"></hr>
+    // <OurServices></OurServices>
+    // <hr class="my-4"></hr>
+    // <Comentary></Comentary>
+    // <hr class="my-4"></hr>
+    // <Productos></Productos>
+    // <hr class="my-4"></hr>
