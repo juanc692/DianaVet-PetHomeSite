@@ -11,6 +11,7 @@ import OurServices from './components/ourServices'
 import Comentary from './components/comentary'
 import Productos from './components/productos'
 import Footer from './components/footer'
+import Whatsapp from './components/whatsapp';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +29,7 @@ function App() {
     <Productos></Productos>
     <hr class="my-4"></hr>
     <Footer></Footer>
+    <Whatsapp/>
     </>
   )
 }
